@@ -1,0 +1,16 @@
+{
+    "name": "OpenMageModuleFostering/AShop_Slider",
+    "type": "magento-module",
+    "license": "Open-Software-License-(OSL)",
+    "homepage": "",
+    "description": "Free awesome slider for magento store with best animation and responsive effect.",
+    "authors": [
+    {
+        "name": "AccessShop Themes",
+        "email": "magento@access-keys.com"
+    }
+],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}
