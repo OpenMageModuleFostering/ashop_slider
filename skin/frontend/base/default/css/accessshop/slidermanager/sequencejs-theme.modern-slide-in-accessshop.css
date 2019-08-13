@@ -333,3 +333,19 @@ h3 {
     width: 42%;
   }
 }
+
+#sequence .slider-wrapper-div {
+ transition: all 1s linear;
+ z-index: 9999;
+}
+#sequence .animate-in .slider-wrapper-div {
+ z-index: 9998;
+}
+
+#sequence-theme img {
+ transition: all 0.1s linear;
+ opacity: 0;
+}
+#sequence-theme .animate-in img {
+ opacity: 1;
+}

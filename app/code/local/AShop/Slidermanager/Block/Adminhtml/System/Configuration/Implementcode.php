@@ -66,7 +66,7 @@ class AShop_Slidermanager_Block_Adminhtml_System_Configuration_Implementcode ext
 <ul>
 	<li>
 		<code>
-			{{block type="slidermanager/slidermanager" name="slidermanager" template="slidermanager/slidermanager.phtml" slidermanager_id="slider_id"}}
+			{{block type="slidermanager/slidermanager" name="slider" template="slidermanager/slidermanager.phtml" slidermanager_id="slider_id"}}
 		</code>
 	</li>
 </ul>
@@ -84,7 +84,7 @@ class AShop_Slidermanager_Block_Adminhtml_System_Configuration_Implementcode ext
 <ul>
 	<li>
 		<code>
-		 &lt;block type="slidermanager/slidermanager" name="slidermanager" template="slidermanager/slidermanager.phtml"&gt;<br>
+		 &lt;block type="slidermanager/slidermanager" name="slider" template="slidermanager/slidermanager.phtml"&gt;<br>
 		&nbsp;&nbsp;&nbsp;&nbsp;&lt;action method="addData"&gt;&lt;slidermanager_id&gt;slider_id&lt;/slidermanager_id&gt;&lt;/action&gt;<br>
 		&lt;/block&gt;
 		</code>	
