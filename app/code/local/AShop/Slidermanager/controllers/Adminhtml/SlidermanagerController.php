@@ -84,7 +84,7 @@ class AShop_Slidermanager_Adminhtml_SlidermanagerController extends Mage_Adminht
 	           		$uploader->setAllowedExtensions(array('jpg','jpeg','gif','png'));
 					$uploader->setAllowRenameFiles(false);
 					$uploader->setFilesDispersion(false);
-					$path = Mage::getBaseDir('media').'\slidermanager' . DS ;
+					$path = Mage::getBaseDir('media').DS.'slidermanager' . DS ;
 					$uploader->save($path, $_FILES['filename']['name'] );
 					
 				} catch (Exception $e) {
@@ -99,7 +99,7 @@ class AShop_Slidermanager_Adminhtml_SlidermanagerController extends Mage_Adminht
 	           		$uploader->setAllowedExtensions(array('jpg','jpeg','gif','png'));
 					$uploader->setAllowRenameFiles(false);
 					$uploader->setFilesDispersion(false);
-					$path = Mage::getBaseDir('media').'\slidermanager' . DS ;
+					$path = Mage::getBaseDir('media').DS.'slidermanager' . DS ;
 					$uploader->save($path, $_FILES['background_image']['name'] );
 					
 				} catch (Exception $e) {

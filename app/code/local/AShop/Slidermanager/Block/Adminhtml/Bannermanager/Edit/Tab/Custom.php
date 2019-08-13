@@ -88,44 +88,31 @@ class AShop_Slidermanager_Block_Adminhtml_Bannermanager_Edit_Tab_Custom extends 
           'index'     => 'title',
       ));
       
-      $this->addColumn('created_time', array(
-            'header' => Mage::helper('slidermanager')->__('Start Date'),
-            'type' => 'datetime',
-            'index' => 'created_time'
-        ));
-
-        $this->addColumn('update_time', array(
-            'header' => Mage::helper('slidermanager')->__('End Date'),
-            'type' => 'datetime',
-            'index' => 'update_time'
-        ));
-        
-        $this->addColumn('order_banner_slider', array(
-            'header' => Mage::helper('slidermanager')->__('Order'),
-            'name' => 'order_banner_slider',
-            'index' => 'order_banner_slider',
-            'width' => 0,
-            'editable' => true,            
-        ));
+      $this->addColumn('filename', array(
+          'header'    => Mage::helper('slidermanager')->__('Banner Image'),
+          'align'     =>'left',
+          'index'     => 'filename',
+          'renderer' => 'slidermanager/adminhtml_renderer_bannerimage'
+      ));
 	  
-        $this->addColumn('action',
-            array(
-                'header'    =>  Mage::helper('slidermanager')->__('Action'),
-                'width'     => '100',
-                'type'      => 'action',
-                'getter'    => 'getId',
-                'actions'   => array(
-                    array(
-                        'caption'   => Mage::helper('slidermanager')->__('Edit'),
-                        'url'       => array('base'=> '*/*/edit'),
-                        'field'     => 'id'
-                    )
-                ),
-                'filter'    => false,
-                'sortable'  => false,
-                'index'     => 'stores',
-                'is_system' => true,
-        ));
+     $this->addColumn('action',
+        array(
+            'header'    =>  Mage::helper('slidermanager')->__('Action'),
+            'width'     => '100',
+            'type'      => 'action',
+            'getter'    => 'getId',
+            'actions'   => array(
+                array(
+                    'caption'   => Mage::helper('slidermanager')->__('Edit'),
+                    'url'       => array('base'=> '*/*/edit'),
+                    'field'     => 'id'
+                )
+            ),
+            'filter'    => false,
+            'sortable'  => false,
+            'index'     => 'stores',
+            'is_system' => true,
+     ));
 	  
       return parent::_prepareColumns();
   }

@@ -26,7 +26,7 @@
  * @package 	AShop_Slidermanager
  * @author  	AccessShop Developer
  */
-class AShop_Slidermanager_Block_Adminhtml_Renderer_bannerimage extends Mage_Adminhtml_Block_Widget_Grid_Column_Renderer_Abstract {
+class AShop_Slidermanager_Block_Adminhtml_Renderer_Bannerimage extends Mage_Adminhtml_Block_Widget_Grid_Column_Renderer_Abstract {
 
     public function render(Varien_Object $row) {
         $image_id = $row->getId();
