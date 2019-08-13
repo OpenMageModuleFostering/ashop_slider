@@ -33,7 +33,7 @@ class AShop_Slidermanager_Adminhtml_BannermanagerController extends Mage_Adminht
 		$this->loadLayout()
 			->_setActiveMenu('slidermanager/slider')
 			->_addBreadcrumb(Mage::helper('adminhtml')->__('Slider Manager'), Mage::helper('adminhtml')->__('Slider Manager'));
-		
+
 		return $this;
 	}   
  

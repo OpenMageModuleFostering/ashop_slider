@@ -31,7 +31,7 @@
 <config>
     <modules>
         <AShop_Slidermanager>
-            <version>1.0.0</version>
+            <version>1.0.1</version>
         </AShop_Slidermanager>
     </modules>
     <frontend>

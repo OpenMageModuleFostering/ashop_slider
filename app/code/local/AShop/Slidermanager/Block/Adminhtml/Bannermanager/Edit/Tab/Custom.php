@@ -81,16 +81,9 @@ class AShop_Slidermanager_Block_Adminhtml_Bannermanager_Edit_Tab_Custom extends 
           'width'     => '50px',
           'index'     => 'slidermanager_id',
       ));
-      
-      $this->addColumn('bannermanager_id', array(
-            'header' => Mage::helper('slidermanager')->__('Current Slider'),
-            'index' => 'bannermanager_id',
-            'type' => 'options',
-            'options' => Mage::getSingleton('slidermanager/select')->getOptionHash(),
-        ));
 
       $this->addColumn('title', array(
-          'header'    => Mage::helper('slidermanager')->__('Slider Name'),
+          'header'    => Mage::helper('slidermanager')->__('Banner Name'),
           'align'     =>'left',
           'index'     => 'title',
       ));
