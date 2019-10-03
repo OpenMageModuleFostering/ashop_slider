@@ -1,3 +1,5 @@
+
+
 ## Original Package Description
 
 Free awesome slider for your store with best animation and responsive effect.

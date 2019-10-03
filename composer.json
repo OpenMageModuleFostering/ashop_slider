@@ -1,7 +1,7 @@
 {
-    "name": "OpenMageModuleFostering\/AShop_Slider",
+    "name": "openmage-module-fostering\/ashop_slider",
     "type": "magento-module",
-    "license": "Open-Software-License-(OSL)",
+    "license": "OSL-3.0",
     "homepage": "",
     "description": "Free awesome slider for your store with best animation and responsive effect.",
     "authors": [
